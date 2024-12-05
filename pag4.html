@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 4 - Carrito de compras</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div class="title-logo">
+            <img class="logo" src="./images/cc7704cdcaaf54516b0ff4ca3d9f8f42.jpg"/>
+            <h1 class="title">NekoAnime</h1>
+        </div>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="pag3.html">DIRECTORIO</a></li>
+                    <li><a href="pag2.html">REGISTRO</a></li>
+                </ul>
+            </nav>
+            <div class="buscar">
+                <input type="text" placeholder="BUSCAR" required>
+                <div class="btn">
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cart-container">
+        <h2>Tu Carrito de Compras</h2>
+        <div class="cart-items">
+            <!-- Aquí se agregarán los PRODUCTOS dinámicamente -->
+            <p class="empty-cart-message">Tu carrito está vacío. Agrega PRODUCTOS para empezar.</p>
+        </div>
+        <div class="cart-summary">
+            <p>Total: <span class="cart-total">$0.00</span></p>
+            <button class="checkout-button" disabled>Proceder al Pago</button>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2024 DEVSTYLES. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 40px;
+    color: #f2f2f2;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #ffa500;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffa500;
+}
+
+.buscar {
+    position: relative;
+    padding: 10px;
+}
+
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #ffa500;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 25%;
+}
+
+.slider-frame img {
+    width: 100%;
+    height: 60px;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+/* Productos */
+
+.section {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: #808080;
+    max-width: 85%;
+    margin: auto;
+    padding: 25px 15px;
+    border: #333;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.sub-title h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: #c0c0c0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; box-shadow: 0.3 ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #e5533d;
+}
+
+/* Estilos específicos para la página del formulario */
+/* Formulario */
+
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+form label {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #F0FAF1;
+    border-radius: 25px;
+    background-color: #EDFFF0;
+}
+
+form button {
+    padding: 10px 50px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.main-formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-image: url('https://w0.peakpx.com/wallpaper/402/476/HD-wallpaper-full-metal-panic-fumofu.jpg');
+    background-size: cover;
+
+}
+.main-formulario h2 {
+    color: #000000;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 5px #4de2da;
+    font-size: 25px;
+    text-align: center;
+}
+.main-formulario form {
+    background-color: #3c9790;
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.main-formulario form button {
+    background-color: #ff6347;
+    color: rgb(255, 255, 255);
+}
